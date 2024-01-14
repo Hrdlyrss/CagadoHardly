@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+header {
+    transition: background-color 3s, color 3s;
+  }
+header:hover {
+    background-color: orange;
+    color: pink;
+}
+header {
+    animation: rotateHeader 5s linear infinite;
+}
+li {
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+/* Keyframes for th-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #008080; /* Teal background */
+    color: black; /* Header text color */
+    text-align: center;
+    padding: 1em;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: limegreen; /* Light pink background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+ul div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+ul div div { 
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+}
+
+img {
+    width: 100%;
+}
+
+
+li {
+    margin-bottom: 5px;
+}
+
+main {
+    transition: background-color 0s ease;
+}
+
+main p {
+    color: black;
+}
+
+
+main:hover {
+    background-color: lime; 
+}
+
+
+header, footer {
+    transition: background-color 3s ease;
+}
+
+footer {
+    background-color: #008080; 
+    color: purple; 
+    text-align: center;
+    padding: .3em;
+}
+</style>
+    <title>Hyoukas Veterinary Shop</title>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Hyoukas Veterinary Shop</h1>
+    </header>
+
+    
+    <main>
+        <p>Recommended for everyone.</p>
+        
+        <ul>
+            <div>
+                <div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html"> About us</a></li> 
+                    <li><a href="Pet Grooming.html">Pet Grooming </a></li>
+                    <li>Hairstyle</li>
+                    <li><a href="index1.html"> Deworming </a></li>
+                    <li> Good for animals </li>
+                    <li><a href="contact.html">And others </a></li>
+                    <li>Visit us now</li>
+                </div>
+                <div class="div2">
+                    <img src="c.jpg" width="150" height ="200"/>
+                </div>
+            </div>
+            
+             <h2>Facts about dachsunds</h2>
+    
+           <video controls loop width="300" height="400" src= "dachsund.mp4">
+        </ul>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2023 Open for reservation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

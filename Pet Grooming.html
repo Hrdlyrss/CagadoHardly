@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyouka's Veterinary Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav {
+      display: inline-block;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 5px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width:360px) {
+      nav a {
+      font-size: 15px;
+      padding: 0 5px;
+      }
+    }
+
+    #about {
+      align-items: center;
+    }
+    #about div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #about div div {
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+
+    #about .medication {
+      display: flex;
+      flex-flow: column;
+    }
+
+    #about .medic {
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+    }
+
+    #about .medic-pic {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .medic-pic img {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Pet Grooming.html">Pet Grooming</a>
+    <a href="index1.html">Deworming</a>
+    <a href="AboutUs.html"> About us</a>
+    <a href="contact.html"> Contact us</a>
+  </nav>
+  
+  <section id="about">
+    <h2>Pet Grooming</h2> 
+      <div>
+        <div>
+          <p>We are happy to serve you and your pet.</p>
+          <img src="a.jpg" width="75%" height ="75%">
+        </div>
+        <div>
+          <p>Does your dog so hairy? I recommend this hairstyle.</p>
+          <img src="b.jpg" width="75%" height ="75%">
+        </div>
+      </div>
+
+    <div class="medication">
+      <div class="medic">
+        <p>Your dog needs vitamins so I recommend this medicines:</p>
+        <div class="medic-pic">
+        <img src="c.jpg" width="75%" height ="75%">
+        <img src="d.jpg" width="75%" height ="75%">
+        </div>
+        <p>" We are happy to serve you and your pet."</p>
+        <p>Thank you for visiting us!</p>
+      </div>
+  </div>
+  </section>
+</header>
+</body>
+
+</html>
